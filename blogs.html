@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<!--
+	Read Only by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Blogs - Hazel</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.chat-message {
+				word-wrap: break-word;
+			}
+			.user-message {
+				background: #3a6f43;
+				color: white;
+				padding: 0.8em;
+				border-radius: 8px;
+				margin-bottom: 0.5em;
+				max-width: 80%;
+				margin-left: auto;
+				text-align: right;
+			}
+			.bot-message {
+				background: #e8f5e9;
+				padding: 0.8em;
+				border-radius: 8px;
+				margin-bottom: 0.5em;
+				max-width: 80%;
+			}
+			#chat-send-btn:hover {
+				background: #2d5634;
+			}
+			#chat-send-btn:disabled {
+				background: #ccc;
+				cursor: not-allowed;
+			}
+			.loading {
+				display: inline-block;
+				width: 12px;
+				height: 12px;
+				border: 2px solid #3a6f43;
+				border-radius: 50%;
+				border-top-color: transparent;
+				animation: spin 0.8s linear infinite;
+			}
+			@keyframes spin {
+				to { transform: rotate(360deg); }
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<section id="header">
+				<header>
+					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+					<h1 id="logo" style="font-size: 1.8rem; margin-bottom: 0.5em;"><a href="index.html"><span style="color: #3a6f43;">Chengtian</span> (Hazel) <span style="color: #3a6f43;">Ma</span></a></h1>
+					<h1 id="logo" style="font-size: 1.8rem;"><a href="index.html"><span style="color: #3a6f43;">马 程 田</span> </a></h1>
+					<p>Human-Centered<br />
+					Researcher/Engineer</p>
+				</header>
+				<nav id="nav" style="margin-top: 2em;">
+					<ul>
+						<li><a href="index.html#about">About</a></li>
+						<li><a href="index.html#research">Research</a></li>
+						<li><a href="index.html#misc">Misc</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="mailto:chengtianma2001@gmail.com" target="_blank" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Blogs -->
+							<section id="blogs">
+								<div class="container" style="padding-top: 2em;">
+									<div style="text-align: right; margin-bottom: 1em;">
+										<a href="hobbies.html" style="text-decoration: underline; color: #78a47f; border: none;">Hobbies</a>
+										<span style="color: #78a47f; margin: 0 0.5em;">|</span>
+										<a href="blogs.html" style="text-decoration: underline; color: #3a6f43; border: none;">Blogs</a>
+									</div>
+									<h3 style="color: #3a6f43;">Blogs</h3>
+									<p>I've been running a personal blog (hosted on WeChat Public Account) since 2019. I share my thoughts and experiences. Fortunately, I am a good writer who has been improving her writing skills from the feedback from the readers (friends). Unfortuantely, I am currently a good writer in Chinese but growing into one equally good in English.</p>
+									<p>Here are some blog posts I wrote.</p>
+									<!-- <p>LLM provides this cross-language bridge that allows readers to understand my thoughts in any language. So, start by asking the LLM to know me more!</p> -->
+									
+									<!-- Chat Interface -->
+									<!-- <div id="chat-container">
+										<div id="chat-box" style="background: #f9f9f9; border: 1px solid #e0e0e0; border-radius: 8px; height: 400px; overflow-y: auto; padding: 1em; margin-bottom: 1em; display: flex; flex-direction: column; gap: 1em;">
+											<div id="chat-messages" style="flex: 1; overflow-y: auto;">
+												<div class="chat-message bot-message" style="background: #e8f5e9; padding: 0.8em; border-radius: 8px; margin-bottom: 0.5em; max-width: 80%;">
+													<p style="margin: 0;">Hello! I can answer questions about the blog posts. Ask me anything!</p>
+												</div>
+											</div>
+										</div>
+										<div id="chat-input-container" style="display: flex; gap: 0.5em;">
+											<input type="text" id="chat-input" placeholder="Ask a question about the blogs..." style="flex: 1; padding: 0.8em; border: 1px solid #e0e0e0; border-radius: 4px; font-size: 0.9em;" />
+											<button id="chat-send-btn" style="padding: 0.8em 1.5em; background: #3a6f43; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 0.9em;">Send</button>
+										</div>
+										<div id="chat-status" style="margin-top: 0.5em; font-size: 0.85em; color: #777; min-height: 1.2em;"></div>
+										<div id="api-key-hint" style="margin-top: 1em; padding: 0.8em; background: #fff3cd; border: 1px solid #ffc107; border-radius: 4px; font-size: 0.85em; color: #856404;">
+											<strong>Setup Required:</strong> To use the chat feature, you need to configure an OpenAI API key. 
+											Open the browser console (F12) and run: <code style="background: #fff; padding: 0.2em 0.4em; border-radius: 2px;">ChatConfig.setAPIKey('your-api-key')</code>
+											<br><small>Alternatively, edit <code>assets/js/chat.js</code> and set the OPENAI_API_KEY constant.</small>
+										</div>
+									</div> -->
+									
+									<div class="features">
+										<!-- Blog Post 1 -->
+										<article>
+											<div class="image" style="max-width: 250px;">
+												<a href="https://mp.weixin.qq.com/s/ot38IQVI1j64IIjF7dqJeg" target="_blank"><img src="photos/Blogs/01.png" alt="" style="width: 100%; height: auto;" /></a>
+											</div>
+											<div class="inner">
+												<h4 style="margin-bottom: 0.3em;"><a href="https://mp.weixin.qq.com/s/ot38IQVI1j64IIjF7dqJeg" target="_blank">严肃蛋糕与浪漫樱桃</a></h4>
+												<p style="margin-top: 0; margin-bottom: 0; font-size: 0.9em; color: #999;">
+													<span style="background: #f4f4f4; padding: 0.1em 0.5em; border-radius: 3px; margin-right: 0.5em; margin-bottom: 0.3em; display: inline-block;">“The serious cake and the romantic cherry”</span>
+												</p>
+											</div>
+										</article>
+
+										<!-- Blog Post 2 -->
+										<article>
+											<div class="image" style="max-width: 250px;">
+												<a href="https://mp.weixin.qq.com/s/YBKeJVqcd5TcaNXWv4XPpw" target="_blank"><img src="photos/Blogs/02.JPG" alt="" style="width: 100%; height: auto;" /></a>
+											</div>
+											<div class="inner">
+												<h4 style="margin-bottom: 0.3em;"><a href="https://mp.weixin.qq.com/s/YBKeJVqcd5TcaNXWv4XPpw" target="_blank">四月，我简单的头脑、感情与困惑</a></h4>
+												<p style="margin-top: 0; margin-bottom: 0; font-size: 0.9em; color: #999;">
+													<span style="background: #f4f4f4; padding: 0.1em 0.5em; border-radius: 3px; margin-right: 0.5em; margin-bottom: 0.3em; display: inline-block;">“A few thoughts in April”</span>
+												</p>
+											</div>
+										</article>
+
+										<!-- Blog Post 3 -->
+										<article>
+											<div class="image" style="max-width: 250px;">
+												<a href="https://mp.weixin.qq.com/s/h9mV_yvGknFDVCbZqSwgpQ" target="_blank"><img src="photos/Blogs/03.JPG" alt="" style="width: 100%; height: auto;" /></a>
+											</div>
+											<div class="inner">
+												<h4 style="margin-bottom: 0.3em;"><a href="https://mp.weixin.qq.com/s/h9mV_yvGknFDVCbZqSwgpQ" target="_blank">异国秋日残酷小天使行动纲领</a></h4>
+												<p style="margin-top: 0; margin-bottom: 0; font-size: 0.9em; color: #999;">
+													<span style="background: #f4f4f4; padding: 0.1em 0.5em; border-radius: 3px; margin-right: 0.5em; margin-bottom: 0.3em; display: inline-block;">“Cruel Angel's Thesis in the Autumn”</span>
+												</p>
+											</div>
+										</article>
+									</div>
+
+									
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; 2025 Chengtian (Hazel) Ma. All rights reserved.</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/chat.js"></script>
+
+	</body>
+</html>
+
